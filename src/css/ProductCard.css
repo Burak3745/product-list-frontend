@@ -1,0 +1,36 @@
+.product-card {
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.product-image {
+  max-width: 120%;
+  height: auto;
+  border-radius: 12px;
+  clip-path: inset(0 20px 0 20px);
+  clip-path: inset(0 20px 0 20px round 12px);
+  margin-left: -20px;
+}
+
+.product-name {
+  font-size: 15px;
+  font-family: "Montserrat-Medium", sans-serif;
+}
+
+.product-price {
+  font-size: 15px;
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.product-color {
+  font-size: 12px;
+  font-family: "Avenir-Book", sans-serif;
+}
+
+.product-rating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-family: "Avenir-Book", sans-serif;
+}

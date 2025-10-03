@@ -1,0 +1,57 @@
+.color-picker {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.color-wrapper {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  padding: 2px;
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+.color-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #000;
+  pointer-events: none;
+  display: none;
+}
+
+.color-wrapper.selected::after {
+  border-width: 2.5px;
+  display: block;
+}
+
+.color-circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: block;
+  transition: transform 0.12s ease, background-color 0.12s ease;
+  background: transparent;
+}
+
+.color-circle.yellow {
+  background-color: #E6CA97;
+}
+
+.color-circle.rose {
+  background-color: #E1A4A9;
+}
+
+.color-circle.white {
+  background-color: #D9D9D9;
+}
