@@ -5,6 +5,19 @@
     margin-left: 64px;
 }
 
+@media (max-width: 462px) {
+    .filters {
+        margin: 0 20px 0 20px;
+        justify-content: center; /* Ortala */
+        flex-wrap: wrap; /* İçindekiler sığmazsa alt satıra geçer */
+    }
+    
+    .filters > * {
+        flex: 1 1 auto; /* İçerikler küçülmeye başlar */
+        min-width: 80px; /* İstersen minimum genişlik ayarla */
+    }
+}
+
 .filters select {
     padding: 8px;
     border-radius: 6px;
