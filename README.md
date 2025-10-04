@@ -43,7 +43,7 @@ It displays a list of products fetched from the backend API and provides feature
 
 3. Configure environment variables (optional):
 - Create a .env file in the project root if you want to set a custom backend API:
-  ```bash
+  ```env
   REACT_APP_API_URL=your-api-url
 
 4. Run the development server:
